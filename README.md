@@ -9,6 +9,6 @@ private async void callJsMethod()
 
 {
       
-        await Jsruntime.InvokeVoidAsync("alertfn" , currentCount);
+        await Jsruntime.InvokeVoidAsync("alertfn" , @currentCount);
     
 }
