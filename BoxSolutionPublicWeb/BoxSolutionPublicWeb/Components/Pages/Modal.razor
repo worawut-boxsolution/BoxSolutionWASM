@@ -1,0 +1,14 @@
+﻿@page "/modal"
+@using BoxSolutionPublicWeb.Components.Layout;
+
+
+<AlertModal @ref="alertModal"/>
+ 
+
+<button class="btn btn-primary" @onclick="ShowAlert">Show Alert</button>
+
+@code {
+    private AlertModal alertModal;
+
+    private async Task  ShowAlert() =>   alertModal.Show();
+}

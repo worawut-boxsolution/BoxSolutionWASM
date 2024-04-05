@@ -7,6 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Components\Pages\modal.razor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Components\Pages\DropZone.razor.scss" />
+    <None Remove="Components\Pages\modal.razor.css" />
+    <None Remove="Components\Pages\modal.razor.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Components\Pages\DropZone.razor.scss" />
+    <Content Include="Components\Pages\modal.razor.cs" />
+    <Content Include="Components\Pages\modal.razor.css" />
+    <Content Include="Components\Pages\modal.razor.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BoxSolutionPublicWeb.Client\BoxSolutionPublicWeb.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.3" />
   </ItemGroup>

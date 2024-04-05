@@ -1,5 +1,10 @@
 ﻿ 
-function alertfn(data)
+function alertfn(value)
 {
-    alert("Show  Data"+ data);
+    alert("Show  Data :" + value );
+}
+
+
+function alertfnObject(Data) {
+    alert(" name :: " + Data.name + " value : " + Data.value );
 }

@@ -1,6 +1,9 @@
 ﻿@page "/counter"
+@using BoxSolutionPublicWeb.Client.Model;
 @inject IJSRuntime JSRuntime;
+ 
 @rendermode InteractiveWebAssembly
+
 
 <PageTitle>Counter</PageTitle>
 
@@ -10,6 +13,7 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 <button class="btn btn-primary" @onclick="callJsMethod">Click JS</button>
+<button class="btn btn-primary" @onclick="callJsMethodObject">Click Pass Object JS</button>
 
 @code {
     private int currentCount = 0;
@@ -21,9 +25,25 @@
     private async void callJsMethod()
 
     {
-    
+
         IncrementCount();
+
         await JSRuntime.InvokeVoidAsync("alertfn", @currentCount);
-    
+
     }
+    private async void callJsMethodObject()
+
+    {
+
+        var objDto = new DataDto
+        {
+            value = 10,
+            name = "Worawut"
+
+        };
+       
+        await JSRuntime.InvokeVoidAsync("alertfnObject", @objDto);
+
+    }
+    
 }

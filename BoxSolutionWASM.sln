@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxSolutionPublicWeb", "BoxSolutionPublicWeb\BoxSolutionPublicWeb\BoxSolutionPublicWeb.csproj", "{65CE44BD-96D4-4C4C-97EE-4E59D90F8259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxSolutionPublicWeb", "BoxSolutionPublicWeb\BoxSolutionPublicWeb\BoxSolutionPublicWeb.csproj", "{65CE44BD-96D4-4C4C-97EE-4E59D90F8259}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxSolutionPublicWeb.Client", "BoxSolutionPublicWeb\BoxSolutionPublicWeb.Client\BoxSolutionPublicWeb.Client.csproj", "{F1DA2D73-8434-4BC8-B513-5B546D55D620}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxSolutionPublicWeb.Client", "BoxSolutionPublicWeb\BoxSolutionPublicWeb.Client\BoxSolutionPublicWeb.Client.csproj", "{F1DA2D73-8434-4BC8-B513-5B546D55D620}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
